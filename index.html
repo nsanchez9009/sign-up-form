@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up!</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="left">
+        <img id="logo" src="./media/logo.png" alt="berserk">
+    </div>
+
+    <div id="right">
+        <div id="headerContainer">
+            <div class="text">This is not a real online service.</div>
+            <div class="text"><em>Berserk</em> is a Japanese manga series written and illustrated by Kentaro Miura. Set in a medieval Europe-inspired dark fantasy world, the story centers on the characters of Guts, a lone mercenary, and Griffith, the leader of a mercenary band called the "Band of the Hawk".</div>
+        </div>
+        
+        <form action="" method="get">
+            <div id="formBox">
+                <div class="text">Sign up to stay updated!</div>
+
+                <div id="inputContainer">
+                    <div class="input">
+                        <label for="firstName">FIRST NAME</label>
+                        <input class="info" type="text" name="firstName" id="firstName">
+                    </div>
+                    <div class="input">
+                        <label for="lastName">LAST NAME</label>
+                        <input class="info" type="text" name="lastName" id="lastName">
+                    </div>
+                    <div class="input">
+                        <label for="email">EMAIL</label>
+                        <input class="info" type="email" name="email" id="email">
+                    </div>
+                    <div class="input">
+                        <label for="phoneNum">PHONE NUMBER</label>
+                        <input class="info" type="number" name="phoneNum" id="phoneNum">
+                    </div>
+                    <div class="input">
+                        <label for="password">PASSWORD</label>
+                        <input class="info" type="password" name="password" id="password">
+                    </div>
+                    <div class="input">
+                        <label for="confirmPass">CONFIRM PASSWORD</label>
+                        <input class="info" type="password" name="confirmPass" id="confirmPass">
+                    </div>
+                </div>
+            </div>
+            <input class="text" id="createAccount" type="submit" value="Create Account">
+            <div id="bottomText" class="text">Already have an account? <a href="">Log in</a></div>
+        </form>
+    </div>
+</body>
+</html>
