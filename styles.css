@@ -22,6 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items:flex-start;
+    flex: auto;
 
     width: 40vw;
     height: 100vh;
@@ -61,7 +62,7 @@ body {
 }
 
 #headerContainer .text{
-    font-size: 25px;
+    font-size: 17px;
     font-weight: normal;
     line-height: 1.3;
 }
@@ -79,21 +80,23 @@ body {
 }
 
 #formBox .text {
-    font-size: 25px;
+    font-size: 20px;
     color: rgb(27, 27, 27);
 }
 
 #inputContainer {
     display: flex;
+    flex: auto;
     flex-wrap: wrap;
 
     gap: 20px;
-    width: 74%;
+    width: 740px;
 }
 
 .input {
     display: flex;
     flex-direction: column;
+    flex-shrink: 1;
 
     padding-right: 60px;
     width: 300px;
@@ -101,11 +104,8 @@ body {
 
 label {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
-    letter-spacing: 2px;
-
-    padding-bottom: 5px;
 
     color: rgb(0, 0, 0);
 }
@@ -119,7 +119,7 @@ label {
     height: 25px;
     padding: 5px 10px;
 
-    transition: all .2s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
 .info:hover {
