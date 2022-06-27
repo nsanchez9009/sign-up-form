@@ -7,6 +7,7 @@
     <title>Sign Up!</title>
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div id="left">
@@ -19,34 +20,34 @@
             <div class="text"><em>Berserk</em> is a Japanese manga series written and illustrated by Kentaro Miura. Set in a medieval Europe-inspired dark fantasy world, the story centers on the characters of Guts, a lone mercenary, and Griffith, the leader of a mercenary band called the "Band of the Hawk".</div>
         </div>
         
-        <form action="" method="get">
+        <form action="" method="post" onsubmit="return validPass()">
             <div id="formBox">
                 <div class="text">Sign up to stay updated!</div>
 
                 <div id="inputContainer">
                     <div class="input">
-                        <label for="firstName">FIRST NAME</label>
-                        <input class="info" type="text" name="firstName" id="firstName">
+                        <label for="firstName">* FIRST NAME</label>
+                        <input class="info" type="text" name="firstName" id="firstName" required>
                     </div>
                     <div class="input">
                         <label for="lastName">LAST NAME</label>
                         <input class="info" type="text" name="lastName" id="lastName">
                     </div>
                     <div class="input">
-                        <label for="email">EMAIL</label>
-                        <input class="info" type="email" name="email" id="email">
+                        <label for="email">* EMAIL</label>
+                        <input class="info" type="email" name="email" id="email" required>
                     </div>
                     <div class="input">
                         <label for="phoneNum">PHONE NUMBER</label>
-                        <input class="info" type="number" name="phoneNum" id="phoneNum">
+                        <input class="info" type="number" name="phoneNum" id="phoneNum" minlength="10" title="Please use 10 digit phone number input.">
                     </div>
                     <div class="input">
-                        <label for="password">PASSWORD</label>
-                        <input class="info" type="password" name="password" id="password">
+                        <label for="password">* PASSWORD</label>
+                        <input class="info" type="password" name="password" id="password" required>
                     </div>
                     <div class="input">
-                        <label for="confirmPass">CONFIRM PASSWORD</label>
-                        <input class="info" type="password" name="confirmPass" id="confirmPass">
+                        <label for="confirmPass">* CONFIRM PASSWORD</label>
+                        <input class="info" type="password" name="confirmPass" id="confirmPass" required>
                     </div>
                 </div>
             </div>
